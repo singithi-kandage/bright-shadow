@@ -2,9 +2,9 @@ import "./AboutPage.scss";
 
 const AboutPage = () => {
   return (
-    <div className="about">
+    <section className="section about-section">
       <h1>About</h1>
-    </div>
+    </section>
   );
 };
 
