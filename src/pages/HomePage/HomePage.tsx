@@ -3,7 +3,7 @@ import "./HomePage.scss";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="page">
       <section className="section home-section">
         <div
           className="section-content"
@@ -52,6 +52,9 @@ const HomePage = () => {
       <section className="section services-section">
         <div className="section-content">
           <h1>Services</h1>
+          <article>Quick Questions (10 minutes) </article>
+          <article>Natal Chart Readings (60 minutes)</article>
+          <article>Synastry Readings (60 minutes)</article>
         </div>
         <button>See All My Services</button>
       </section>
