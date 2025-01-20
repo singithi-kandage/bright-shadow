@@ -1,11 +1,19 @@
+@import "@/styles/colors.scss";
+
+.home-section,
+.about-section,
+.services-section {
+  margin: 0;
+}
+
 .home-section {
-  background-color: pink;
+  background-color: $space-cadet;
 }
 
 .about-section {
-  background-color: lightblue;
+  background-color: $ultra-violet;
 }
 
 .services-section {
-  background-color: lightgreen;
+  background-color: $rose-quartz;
 }
