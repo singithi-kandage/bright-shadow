@@ -1,40 +1,57 @@
+import { Fragment } from "react";
+import FadeInSection from "@/components/FadeInSection/FadeInSection";
+import Footer from "@/components/Footer/Footer";
 import "./AboutPage.scss";
+
+import birthchart from "@/assets/birthchart.png";
 
 const AboutPage = () => {
   return (
-    <div className="page">
-      <section className="section about-section">
-        <div className="section-content">
-          <h1>About</h1>
+    <Fragment>
+      <div className="page">
+        <section className="section about-section">
+          <FadeInSection>
+            <div className="section-content section-content--divided">
+              <div className="image-container">
+                <img src={birthchart}></img>
+              </div>
+              <div className="text-container">
+                <h2>About</h2>
 
-          <p>
-            I am a astrologer with a passion for helping people gain insight
-            into their lives through the ancient science of astrology. I have
-            been practicing Western archetypal astrology for several years, and
-            during this time, I have helped countless individuals find
-            direction, purpose, and meaning in their lives.
-          </p>
-          <p>
-            My approach to astrology combines the psychological approach to
-            Western astrology, which I blend with the ancient techniques of
-            Vedic teaching to offer a comprehensive and personalized reading to
-            each of my clients. Whether you are seeking guidance on love and
-            relationships, career and finances, health and wellness, or personal
-            growth and spirituality, I am here to help.
-          </p>
-          <p>
-            My services include birth chart readings, synastry and composite
-            chart analysis, and transit astrology. Currently, I only provide my
-            services in English.
-          </p>
-          <p>
-            Thank you for considering me for your astrological needs. I look
-            forward to helping you gain clarity and insight into your life
-            through the transformative power of astrology.
-          </p>
-        </div>
-      </section>
-    </div>
+                <p>
+                  I am an astrologer with a passion for helping people gain
+                  insight into their lives through the ancient science of
+                  astrology. I have been practicing Western archetypal astrology
+                  for several years, and during this time, I have helped
+                  countless individuals find direction, purpose, and meaning in
+                  their lives.
+                </p>
+                <p>
+                  My approach to astrology combines the psychological approach
+                  to Western astrology, which I blend with the ancient
+                  techniques of Vedic teaching to offer a comprehensive and
+                  personalized reading to each of my clients. Whether you are
+                  seeking guidance on love and relationships, career and
+                  finances, health and wellness, or personal growth and
+                  spirituality, I am here to help.
+                </p>
+                <p>
+                  My services include birth chart readings, synastry and
+                  composite chart analysis, and transit astrology. Currently, I
+                  only provide my services in English.
+                </p>
+                <p>
+                  Thank you for considering me for your astrological needs. I
+                  look forward to helping you gain clarity and insight into your
+                  life through the transformative power of astrology.
+                </p>
+              </div>
+            </div>
+          </FadeInSection>
+        </section>
+      </div>
+      <Footer />
+    </Fragment>
   );
 };
 

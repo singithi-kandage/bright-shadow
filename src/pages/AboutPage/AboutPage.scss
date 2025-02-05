@@ -1,2 +1,28 @@
 .about-section {
+  h2 {
+    font-weight: bold;
+  }
+
+  h2,
+  p {
+    color: #3a383c;
+  }
+
+  .image-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .text-container {
+    width: 50%;
+  }
 }

@@ -17,6 +17,7 @@ const Footer: React.FC = () => {
           </li>
         </ul>
       </nav>
+      <p>© 2025. Bright Shadow Astrology. All Rights Reserved. </p>
     </footer>
   );
 };

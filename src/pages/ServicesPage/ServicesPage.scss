@@ -1,2 +1,16 @@
 .services-section {
+  .section-content {
+    border: 1px solid #dcc063;
+    background-color: #5f5f5f;
+    margin-top: 150px;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .info-container {
+      margin-bottom: 50px;
+    }
+  }
 }

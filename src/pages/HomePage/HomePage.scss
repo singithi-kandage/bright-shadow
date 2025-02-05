@@ -7,13 +7,134 @@
 }
 
 .home-section {
-  background-color: $space-cadet;
+  background-color: #3a383c;
+  display: flex;
+
+  .section-content {
+    .section-header {
+      padding: 40px;
+      background-color: #3a383c;
+      width: 60%;
+      height: fit-content;
+      border: 1px solid #dcc063;
+
+      h1 {
+        font-size: 3.5rem;
+        width: 100%;
+
+        #first-word {
+          color: #dcc063;
+        }
+
+        #second-word {
+          color: #ebbc98;
+        }
+
+        #third-word {
+          color: #e1a646;
+        }
+      }
+
+      h2 {
+        font-size: 1rem;
+        margin: 50px 0px;
+      }
+    }
+
+    button {
+      margin-top: 0;
+      align-self: flex-start;
+    }
+  }
+
+  // // animate the background to fade in and out every 2 seconds
+  // .section-background {
+  //   animation: fadeInOut 2s infinite;
+  //   background-size: cover;
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   height: 130vh;
+  //   position: absolute;
+  //   z-index: 1;
+  //   width: 100%;
+
+  //   @keyframes fadeInOut {
+  //     0% {
+  //       opacity: 0.25;
+  //     }
+  //     50% {
+  //       opacity: 1;
+  //     }
+  //     100% {
+  //       opacity: 0.25;
+  //     }
+  //   }
+  // }
+
+  .section-body {
+    z-index: 2;
+    width: 100%;
+  }
 }
 
 .about-section {
-  background-color: $ultra-violet;
+  // background-color: $ultra-violet;
+  background-color: #aaa8ac;
+
+  .section-body {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      align-self: center;
+    }
+  }
 }
 
 .services-section {
-  background-color: $rose-quartz;
+  // background-color: $rose-quartz;
+  background-color: #5f5f5f;
+
+  .section-content {
+    a {
+      align-self: center;
+    }
+
+    .services-list {
+      margin-top: 20px;
+
+      .service-description {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+        // animate height on hover
+        height: 50px;
+        transition: height 0.5s;
+
+        &:hover {
+          height: 150px;
+
+          p {
+            height: 100%;
+            opacity: 1;
+          }
+        }
+
+        span {
+          font-weight: 400;
+        }
+
+        p {
+          height: 0px;
+          opacity: 0;
+          overflow: hidden;
+          text-align: left;
+          //animate height, then opacity
+          transition: height 0.5s, opacity 0.5s;
+        }
+      }
+    }
+  }
 }

@@ -1,64 +1,166 @@
-// boilerplate for home page
+import { Fragment } from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import FadeInSection from "@/components/FadeInSection/FadeInSection";
+import Footer from "@/components/Footer/Footer";
+
 import "./HomePage.scss";
+
+import background_home from "@/assets/background_home.svg";
 
 const HomePage = () => {
   return (
-    <div className="page">
-      <section className="section home-section">
-        <div
-          className="section-content"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <h1>Bright Shadow Astrology</h1>
-          <h2>Providing cosmic healing through deep insight and feeling. </h2>
-          <button>Book a Reading</button>
-        </div>
-      </section>
-      <section className="section about-section">
-        <div className="section-content">
-          <h1>About</h1>
-          <p>
-            I am a astrologer with a passion for helping people gain insight
-            into their lives through the ancient science of astrology. I have
-            been practicing Western archetypal astrology for several years, and
-            during this time, I have helped countless individuals find
-            direction, purpose, and meaning in their lives.
-          </p>
-          <p>
-            My approach to astrology combines the psychological approach to
-            Western astrology, which I blend with the ancient techniques of
-            Vedic teaching to offer a comprehensive and personalized reading to
-            each of my clients. Whether you are seeking guidance on love and
-            relationships, career and finances, health and wellness, or personal
-            growth and spirituality, I am here to help.
-          </p>
-          <p>
-            My services include birth chart readings, synastry and composite
-            chart analysis, and transit astrology. Currently, I only provide my
-            services in English.
-          </p>
-          <p>
-            Thank you for considering me for your astrological needs. I look
-            forward to helping you gain clarity and insight into your life
-            through the transformative power of astrology.
-          </p>
-        </div>
-        <button>Learn More</button>
-      </section>
-      <section className="section services-section">
-        <div className="section-content">
-          <h1>Services</h1>
-          <article>Quick Questions (10 minutes) </article>
-          <article>Natal Chart Readings (60 minutes)</article>
-          <article>Synastry Readings (60 minutes)</article>
-        </div>
-        <button>See All My Services</button>
-      </section>
-    </div>
+    <Fragment>
+      <div className="page">
+        <section className="section home-section">
+          <div
+            className="section-background"
+            style={{ backgroundImage: `url(${background_home})` }}
+          ></div>
+          <div className="section-body">
+            <div className="section-content">
+              <div className="section-header">
+                <h1>
+                  <div id="first-word">Bright</div>
+                  <div id="second-word">Shadow</div>
+                  <div id="third-word">Astrology</div>
+                </h1>
+                <h2>Helping you find your story written in the stars.</h2>
+                <Link to="/about">
+                  <button className="button button--bestia">
+                    <div className="button__bg"></div>
+                    <span>Let's Go</span>
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="section about-section">
+          <div className="section-body" style={{ position: "relative" }}>
+            <FadeInSection>
+              <div
+                className="section-content section-content--divided"
+                style={{ border: "none" }}
+              >
+                <div style={{ width: "30%" }}>
+                  <h2>About</h2>
+                </div>
+                <div style={{ width: "70%" }}>
+                  <p>
+                    I am a astrologer with a passion for helping people gain
+                    insight into their lives through the ancient science of
+                    astrology. I have been practicing Western archetypal
+                    astrology for several years, and during this time, I have
+                    helped countless individuals find direction, purpose, and
+                    meaning in their lives.
+                  </p>
+                  <p>
+                    My approach to astrology combines the psychological approach
+                    to Western astrology, which I blend with the ancient
+                    techniques of Vedic teaching to offer a comprehensive and
+                    personalized reading to each of my clients. Whether you are
+                    seeking guidance on love and relationships, career and
+                    finances, health and wellness, or personal growth and
+                    spirituality, I am here to help.
+                  </p>
+                  <p>
+                    My services include birth chart readings, synastry and
+                    composite chart analysis, and transit astrology. Currently,
+                    I only provide my services in English.
+                  </p>
+                  <p>
+                    Thank you for considering me for your astrological needs. I
+                    look forward to helping you gain clarity and insight into
+                    your life through the transformative power of astrology.
+                  </p>
+                  <Link to="/about">
+                    <button className="button button--bestia">
+                      <div className="button__bg"></div>
+                      <span>Learn More</span>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </FadeInSection>
+          </div>
+        </section>
+        <section className="section services-section">
+          <div className="section-body">
+            <div
+              className="section-content"
+              style={{ border: "none", marginTop: "100px" }}
+            >
+              <FadeInSection customStyle={{ flexDirection: "column" }}>
+                <h2>Services</h2>
+                <div className="services-list">
+                  <article>
+                    <div className="service-description">
+                      <span>Lightning Reads</span>
+                      <p>
+                        A 10-minute audio recording of a reading that focuses on
+                        one specific question or area of your life. Perfect for
+                        quick insights and guidance.
+                      </p>
+                    </div>
+                    <button>
+                      <Link
+                        to="https://calendly.com/brightshadowastrology/lightning-read"
+                        target="_blank"
+                      >
+                        <FontAwesomeIcon icon={faArrowRight} />
+                      </Link>
+                    </button>
+                  </article>
+                  <article>
+                    <div className="service-description">
+                      <span>Natal Chart Readings</span>
+                      <p>
+                        A 60-minute deep dive into your natal chart. Learn about
+                        your strengths, weaknesses, and life path.
+                      </p>
+                    </div>
+                    <button>
+                      <Link
+                        to="https://calendly.com/brightshadowastrology/natal-chart-reading"
+                        target="_blank"
+                      >
+                        <FontAwesomeIcon icon={faArrowRight} />
+                      </Link>
+                    </button>
+                  </article>
+                  <article>
+                    <div className="service-description">
+                      <span>Synastry Readings</span>
+                      <p>
+                        A 60-minute reading that compares two natal charts to
+                        determine compatibility and potential challenges.
+                      </p>
+                    </div>
+                    <button>
+                      <Link
+                        to="https://calendly.com/brightshadowastrology/synastry-chart-reading"
+                        target="_blank"
+                      >
+                        <FontAwesomeIcon icon={faArrowRight} />
+                      </Link>
+                    </button>
+                  </article>
+                </div>
+                <Link to="/services">
+                  <button className="button button--bestia">
+                    <div className="button__bg"></div>
+                    <span>See All My Services</span>
+                  </button>
+                </Link>
+              </FadeInSection>
+            </div>
+          </div>
+        </section>
+      </div>
+      <Footer />
+    </Fragment>
   );
 };
 

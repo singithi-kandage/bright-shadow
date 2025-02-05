@@ -5,32 +5,41 @@ import AboutPage from "@/pages/AboutPage/AboutPage";
 import ServicesPage from "@/pages/ServicesPage/ServicesPage";
 import PrivacyPolicyPage from "@/pages/PrivacyPolicyPage/PrivacyPolicyPage";
 import TermsConditionsPage from "@/pages/TermsConditionsPage/TermsConditionsPage";
+import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
 
 import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
 
 // styles
 import "./App.scss";
 
 const App: React.FC = () => {
   return (
-    <BrowserRouter>
-      <Header />
+    <div className="app">
+      <BrowserRouter>
+        <ScrollToTop />
+        <Header />
 
-      <main>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/services" element={<ServicesPage />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
-          <Route
-            path="/terms-and-conditions"
-            element={<TermsConditionsPage />}
-          />
-        </Routes>
-      </main>
-      <Footer />
-    </BrowserRouter>
+        <main
+          style={{
+            position: "absolute",
+            top: "0px",
+            width: "100%",
+            height: "fit-content",
+          }}
+        >
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+            <Route
+              path="/terms-and-conditions"
+              element={<TermsConditionsPage />}
+            />
+          </Routes>
+        </main>
+      </BrowserRouter>
+    </div>
   );
 };
 
