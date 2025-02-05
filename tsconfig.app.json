@@ -25,7 +25,8 @@
     // Aliasing paths
     "types": ["node"],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/assets": ["./src/assets"]
     }
   },
   "include": ["src"]
