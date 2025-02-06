@@ -2,9 +2,14 @@ import React from "react";
 import { useState, useRef, useEffect } from "react";
 import "./FadeInSection.scss";
 
-const FadeInSection: React.FC = (props) => {
+interface FadeInSectionProps {
+  children: React.ReactNode;
+  customStyle?: React.CSSProperties;
+}
+
+const FadeInSection: React.FC<FadeInSectionProps> = (props) => {
   const { children, customStyle } = props;
-  const domRef = useRef();
+  const domRef = useRef<HTMLDivElement>(null);
 
   const [isVisible, setVisible] = useState(false);
 
@@ -15,12 +20,16 @@ const FadeInSection: React.FC = (props) => {
         // Not possible to set it back to false like this:
         setVisible(true);
 
-        // No need to keep observing:
-        observer.unobserve(domRef.current);
+        if (domRef.current) {
+          // No need to keep observing:
+          observer.unobserve(domRef.current);
+        }
       }
     });
 
-    observer.observe(domRef.current);
+    if (domRef.current) {
+      observer.observe(domRef.current);
+    }
 
     return () => observer.disconnect();
   }, []);
