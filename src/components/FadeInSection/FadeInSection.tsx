@@ -1,6 +1,8 @@
+import React from "react";
 import { useState, useRef, useEffect } from "react";
 import "./FadeInSection.scss";
-const FadeInSection = (props) => {
+
+const FadeInSection: React.FC = (props) => {
   const { children, customStyle } = props;
   const domRef = useRef();
 
