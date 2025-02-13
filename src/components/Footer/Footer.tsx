@@ -15,6 +15,9 @@ const Footer: React.FC = () => {
           <li>
             <Link to="/privacy-policy">Privacy Policy</Link>
           </li>
+          <li>
+            <Link to="/faqs">FAQs</Link>
+          </li>
         </ul>
       </nav>
       <p>© 2025. Bright Shadow Astrology. All Rights Reserved. </p>

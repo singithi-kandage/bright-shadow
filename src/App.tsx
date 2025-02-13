@@ -5,6 +5,7 @@ import AboutPage from "@/pages/AboutPage/AboutPage";
 import ServicesPage from "@/pages/ServicesPage/ServicesPage";
 import PrivacyPolicyPage from "@/pages/PrivacyPolicyPage/PrivacyPolicyPage";
 import TermsConditionsPage from "@/pages/TermsConditionsPage/TermsConditionsPage";
+import FAQPage from "./pages/FAQPage/FAQPage";
 import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
 
 import Header from "@/components/Header/Header";
@@ -36,6 +37,7 @@ const App: React.FC = () => {
               path="/terms-and-conditions"
               element={<TermsConditionsPage />}
             />
+            <Route path="/faqs" element={<FAQPage />} />
           </Routes>
         </main>
       </BrowserRouter>
