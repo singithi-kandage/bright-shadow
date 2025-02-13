@@ -4,14 +4,14 @@
   width: 100%;
   color: #fff;
   text-align: center;
-  height: 100px;
+  height: 150px;
   position: sticky;
   z-index: 100;
   top: 0;
   display: flex;
   justify-content: center;
   // background colour is a gradient from dark grey to transparent
-  background: linear-gradient(rgba(23, 23, 23, 1), rgba(0, 0, 0, 0));
+  background: linear-gradient(rgb(15, 12, 16), rgba(0, 0, 0, 0));
 }
 
 .logo {
@@ -19,8 +19,9 @@
 }
 
 nav {
-  width: 90%;
-  height: 80%;
+  width: 95%;
+  height: 50%;
+  // text-transform: uppercase;
 
   //select last ul element
   ul:last-of-type {
@@ -31,6 +32,7 @@ nav {
 
     a {
       color: #fff;
+      padding: 10px 20px;
     }
   }
 

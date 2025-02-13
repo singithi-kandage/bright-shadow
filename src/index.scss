@@ -17,8 +17,6 @@ a,
 p,
 span,
 summary {
-  // font-family: "Quicksand", serif;
-  // font-optical-sizing: auto;
   font-family: "Mona Sans", serif;
   font-optical-sizing: auto;
   font-weight: 200;
@@ -95,7 +93,7 @@ button {
 .button--bestia .button__bg::after {
   content: "";
   position: absolute;
-  background: #000;
+  background: #1e1920;
 }
 
 .button--bestia .button__bg::before {
@@ -140,7 +138,7 @@ article {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  background-color: #5f5f5f;
+  background-color: transparent;
 
   span {
     line-height: 3;
@@ -149,7 +147,7 @@ article {
 
 details {
   summary.secondary {
-    background-color: #4e4e4e;
+    background-color: #2d2f50;
     border: none;
   }
 

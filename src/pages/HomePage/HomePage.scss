@@ -7,13 +7,13 @@
 }
 
 .home-section {
-  background-color: #3a383c;
+  background-color: #2a2735;
   display: flex;
 
   .section-content {
     .section-header {
       padding: 40px;
-      background-color: #3a383c;
+      background-color: #2a2735;
       width: 60%;
       height: fit-content;
       border: 1px solid #dcc063;
@@ -71,6 +71,16 @@
   //   }
   // }
 
+  .section-background-overlay {
+    height: 130vh;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    background-repeat: repeat;
+    background-color: #2a2735;
+    background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
+  }
+
   .section-body {
     z-index: 2;
     width: 100%;
@@ -78,8 +88,7 @@
 }
 
 .about-section {
-  // background-color: $ultra-violet;
-  background-color: #aaa8ac;
+  background-color: #c2c4e0;
 
   .section-body {
     display: flex;
@@ -92,8 +101,17 @@
 }
 
 .services-section {
-  // background-color: $rose-quartz;
-  background-color: #5f5f5f;
+  background-color: #4a4b67;
+
+  .section-background-overlay {
+    height: 130vh;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    background-repeat: repeat;
+    background-color: #2a2735;
+    background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
+  }
 
   .section-content {
     a {

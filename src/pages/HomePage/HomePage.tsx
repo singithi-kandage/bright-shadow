@@ -18,6 +18,7 @@ const HomePage = () => {
             className="section-background"
             style={{ backgroundImage: `url(${background_home})` }}
           ></div>
+          <div className="section-background-overlay"></div>
           <div className="section-body">
             <div className="section-content">
               <div className="section-header">

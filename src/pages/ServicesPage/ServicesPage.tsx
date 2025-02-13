@@ -134,8 +134,7 @@ const ServicesPage = () => {
                 </details>
                 <details>
                   <summary role="button" className="secondary">
-                    Value Pack Readings (3 Natal Chart Readings minutes for
-                    $220)
+                    Value Pack Readings (3 Natal Chart Readings for $220)
                   </summary>
                   <p>
                     This service gives you three (3) natal chart readings at a
