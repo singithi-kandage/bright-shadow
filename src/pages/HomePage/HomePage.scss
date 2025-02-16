@@ -214,7 +214,13 @@
           width: 80%;
         }
         .text-container {
+          display: flex;
+          flex-direction: column;
           width: 80%;
+
+          a {
+            align-self: center;
+          }
         }
       }
     }

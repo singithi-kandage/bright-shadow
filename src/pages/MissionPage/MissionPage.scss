@@ -9,3 +9,17 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .mission-section {
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+
+      a {
+        align-self: center;
+      }
+    }
+  }
+}
