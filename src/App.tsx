@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "@/pages/HomePage/HomePage";
 import AboutPage from "@/pages/AboutPage/AboutPage";
 import ServicesPage from "@/pages/ServicesPage/ServicesPage";
+import MissionPage from "@/pages/MissionPage/MissionPage";
 import PrivacyPolicyPage from "@/pages/PrivacyPolicyPage/PrivacyPolicyPage";
 import TermsConditionsPage from "@/pages/TermsConditionsPage/TermsConditionsPage";
 import FAQPage from "./pages/FAQPage/FAQPage";
@@ -32,6 +33,7 @@ const App: React.FC = () => {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/services" element={<ServicesPage />} />
+            <Route path="/mission" element={<MissionPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route
               path="/terms-and-conditions"

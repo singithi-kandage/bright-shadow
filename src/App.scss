@@ -18,20 +18,16 @@
     position: absolute;
     z-index: 1;
     width: 100%;
-    background-size: cover;
   }
 
   &-body {
-    // position: absolute;
-    // z-index: 2;
-    // width: 100%;
     height: fit-content;
   }
 
   &-content {
     margin: 0 auto;
     margin-top: 100px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     padding: 100px;
     width: 80%;
     display: flex;
@@ -50,4 +46,36 @@
 .text-center {
   text-align: center;
   margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .page {
+    min-height: 100vh;
+  }
+
+  .section {
+    &-background {
+      height: 100vh;
+    }
+
+    .section-content {
+      width: 100%;
+      padding: 20px;
+      min-height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+
+  .text-center {
+    margin-bottom: 20px;
+  }
 }
