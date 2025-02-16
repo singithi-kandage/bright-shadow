@@ -1,2 +1,13 @@
 .terms-and-conditions-section {
 }
+
+@media (max-width: 768px) {
+  .terms-and-conditions-section {
+    .section-content {
+      margin-bottom: 200px;
+      .text-container {
+        width: 80%;
+      }
+    }
+  }
+}

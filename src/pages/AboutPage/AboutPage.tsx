@@ -3,7 +3,7 @@ import FadeInSection from "@/components/FadeInSection/FadeInSection";
 import Footer from "@/components/Footer/Footer";
 import "./AboutPage.scss";
 
-import birthchart from "@/assets/birthchart.png";
+import about_page from "@/assets/about_page.png";
 
 const AboutPage = () => {
   return (
@@ -11,9 +11,12 @@ const AboutPage = () => {
       <div className="page">
         <section className="section about-section">
           <FadeInSection>
-            <div className="section-content section-content--divided">
+            <div
+              className="section-content section-content--divided"
+              style={{ marginBottom: "200px" }}
+            >
               <div className="image-container">
-                <img src={birthchart}></img>
+                <img src={about_page}></img>
               </div>
               <div className="text-container">
                 <h2>About</h2>

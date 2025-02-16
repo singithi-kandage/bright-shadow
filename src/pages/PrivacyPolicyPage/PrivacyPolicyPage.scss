@@ -1,2 +1,13 @@
 .privacy-policy-section {
 }
+
+@media (max-width: 768px) {
+  .privacy-policy-section {
+    .section-content {
+      margin-bottom: 200px;
+      .text-container {
+        width: 80%;
+      }
+    }
+  }
+}

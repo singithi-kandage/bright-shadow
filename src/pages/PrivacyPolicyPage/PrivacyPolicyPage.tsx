@@ -10,8 +10,17 @@ const PrivacyPolicyPage = () => {
       <div className="page">
         <section className="section privacy-policy-section">
           <div className="section-body"></div>
-          <div className="section-content" style={{ marginTop: "100px" }}>
-            <FadeInSection customStyle={{ flexDirection: "column" }}>
+          <div
+            className="section-content"
+            style={{ marginTop: "100px", marginBottom: "200px" }}
+          >
+            <FadeInSection
+              customStyle={{
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               <h1 className="text-center">Privacy Policy</h1>
 
               <p>

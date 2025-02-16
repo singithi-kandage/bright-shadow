@@ -4,28 +4,24 @@
   width: 100%;
   color: #fff;
   text-align: center;
-  height: 150px;
+  height: 80px;
   position: sticky;
   z-index: 100;
   top: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   // background colour is a gradient from dark grey to transparent
-  background: linear-gradient(rgb(15, 12, 16), rgba(0, 0, 0, 0));
+  background: linear-gradient(rgb(29, 33, 29), rgba(29, 33, 29, 0));
 }
 
 .logo {
   height: 50px;
 }
 
-nav {
+.nav-menu {
   width: 95%;
-  height: 50%;
-  // text-transform: uppercase;
-
-  //select last ul element
-  ul:last-of-type {
-  }
+  height: 75%;
 
   li {
     display: inline-block;
@@ -44,4 +40,68 @@ nav {
 nav ol:last-of-type,
 nav ul:last-of-type {
   margin-right: 0;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 60px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .logo {
+      height: 40px;
+    }
+
+    .menu-btn {
+      .menu-line {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px;
+      }
+    }
+
+    .mobile-menu-content {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 50%;
+      background-color: grey;
+      z-index: 100;
+      padding: 10px;
+      text-align: center;
+
+      ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+
+        li {
+          display: block;
+          a {
+            color: #fff;
+            padding: 10px 20px;
+          }
+        }
+      }
+    }
+
+    .mobile-menu-content-active {
+      display: block;
+    }
+  }
 }

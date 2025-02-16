@@ -5,7 +5,7 @@
 
   h2,
   p {
-    color: #3a383c;
+    color: #383c38;
   }
 
   .image-container {
@@ -24,5 +24,17 @@
 
   .text-container {
     width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    .image-container {
+      width: 80%;
+    }
+
+    .text-container {
+      width: 80%;
+    }
   }
 }

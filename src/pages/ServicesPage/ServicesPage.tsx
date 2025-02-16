@@ -13,7 +13,14 @@ const ServicesPage = () => {
       <div className="page">
         <section className="section services-section">
           <FadeInSection>
-            <div className="section-content">
+            <div
+              className="section-content"
+              style={{
+                width: "80%",
+                marginTop: "150px",
+                marginBottom: "250px",
+              }}
+            >
               <div className="info-container">
                 <h1>Services</h1>
                 <p>

@@ -24,6 +24,12 @@ summary {
   font-variation-settings: "wdth" 100;
 }
 
+a {
+  &:hover {
+    text-decoration-color: #c9b16a;
+  }
+}
+
 button {
   background-color: #c9b16a;
   padding: 10px 30px;
@@ -40,7 +46,7 @@ button {
   }
 
   &:hover {
-    background-color: #dcc063;
+    background-color: #e9c44a;
   }
 }
 
@@ -93,7 +99,7 @@ button {
 .button--bestia .button__bg::after {
   content: "";
   position: absolute;
-  background: #1e1920;
+  background: #232b23;
 }
 
 .button--bestia .button__bg::before {
@@ -138,7 +144,7 @@ article {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  background-color: transparent;
+  background-color: #626662;
 
   span {
     line-height: 3;
@@ -147,7 +153,7 @@ article {
 
 details {
   summary.secondary {
-    background-color: #2d2f50;
+    background-color: rgba(0, 0, 0, 0.3);
     border: none;
   }
 

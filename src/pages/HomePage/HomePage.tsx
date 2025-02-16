@@ -7,17 +7,19 @@ import Footer from "@/components/Footer/Footer";
 
 import "./HomePage.scss";
 
-import background_home from "@/assets/background_home.svg";
+import background_home2 from "@/assets/background_home2.svg";
 
 const HomePage = () => {
   return (
     <Fragment>
       <div className="page">
         <section className="section home-section">
-          <div
-            className="section-background"
-            style={{ backgroundImage: `url(${background_home})` }}
-          ></div>
+          <div className="section-background">
+            <div
+              className="section-background-image"
+              style={{ backgroundImage: `url(${background_home2})`, zIndex: 0 }}
+            ></div>
+          </div>
           <div className="section-background-overlay"></div>
           <div className="section-body">
             <div className="section-content">
@@ -45,10 +47,10 @@ const HomePage = () => {
                 className="section-content section-content--divided"
                 style={{ border: "none" }}
               >
-                <div style={{ width: "30%" }}>
+                <div className="title-container">
                   <h2>About</h2>
                 </div>
-                <div style={{ width: "70%" }}>
+                <div className="text-container">
                   <p>
                     I am a astrologer with a passion for helping people gain
                     insight into their lives through the ancient science of
@@ -88,6 +90,7 @@ const HomePage = () => {
           </div>
         </section>
         <section className="section services-section">
+          <div className="section-background-overlay"></div>
           <div className="section-body">
             <div
               className="section-content"

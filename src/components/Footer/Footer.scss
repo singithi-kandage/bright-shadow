@@ -3,7 +3,7 @@
   bottom: 0;
   z-index: 3;
   width: 100%;
-  background-color: #1e1920;
+  background-color: #181e18;
   color: #fff;
   text-align: center;
   padding: 10px;
@@ -18,5 +18,28 @@
 
   p {
     font-size: 0.75rem;
+  }
+
+  a {
+    color: #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    nav {
+      ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+          padding: 5px;
+        }
+      }
+    }
+
+    p {
+      font-size: 0.5rem;
+    }
   }
 }
