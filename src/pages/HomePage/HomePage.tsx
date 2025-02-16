@@ -5,9 +5,8 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import FadeInSection from "@/components/FadeInSection/FadeInSection";
 import Footer from "@/components/Footer/Footer";
 
-import "./HomePage.scss";
-
 import background_home2 from "@/assets/background_home2.svg";
+import "./HomePage.scss";
 
 const HomePage = () => {
   return (
@@ -30,7 +29,7 @@ const HomePage = () => {
                   <div id="third-word">Astrology</div>
                 </h1>
                 <h2>Helping you find your story written in the stars.</h2>
-                <Link to="/about">
+                <Link to="/mission">
                   <button className="button button--bestia">
                     <div className="button__bg"></div>
                     <span>Let's Go</span>
