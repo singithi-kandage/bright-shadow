@@ -22,31 +22,34 @@ const AboutPage = () => {
                 <h2>About</h2>
 
                 <p>
-                  I am an astrologer with a passion for helping people gain
-                  insight into their lives through the ancient science of
-                  astrology. I have been practicing Western archetypal astrology
-                  for several years, and during this time, I have helped
-                  countless individuals find direction, purpose, and meaning in
-                  their lives.
+                  Hi, I’m Singithi! I am an astrologer with a passion for
+                  helping people gain insight into their lives through the art
+                  and intuitive science of astrology. I have been practicing
+                  Western archetypal astrology for ten years, and during this
+                  time, I have helped my clients find direction, purpose, and
+                  meaning in their lives. Most recently, I’ve been the manager
+                  of Montreal’s Astrology Meetup since 2023, a role that has
+                  been an immense pleasure to fulfill.
                 </p>
                 <p>
-                  My approach to astrology combines the psychological approach
-                  to Western astrology, which I blend with the ancient
-                  techniques of Vedic teaching to offer a comprehensive and
-                  personalized reading to each of my clients. Whether you are
-                  seeking guidance on love and relationships, career and
-                  finances, health and wellness, or personal growth and
-                  spirituality, I am here to help.
+                  My work blends the psychological approach of archetypal
+                  astrology with ancient techniques and philosophy of Vedic
+                  teachings to offer a comprehensive and personalized reading to
+                  each of my clients. I use the tropical zodiac, and employ an
+                  intuitive approach to house systems, though I’m most often
+                  using whole sign houses.
                 </p>
                 <p>
                   My services include birth chart readings, synastry and
                   composite chart analysis, and transit astrology. Currently, I
-                  only provide my services in English.
+                  only provide my services in English. My readings are produced
+                  solely with my skills and knowledge, and are free from AI
+                  content.
                 </p>
                 <p>
-                  Thank you for considering me for your astrological needs. I
-                  look forward to helping you gain clarity and insight into your
-                  life through the transformative power of astrology.
+                  Whether you are seeking guidance on love and relationships,
+                  career and finances, health and wellness, or personal growth
+                  and spirituality, I am here to help.
                 </p>
               </div>
             </div>

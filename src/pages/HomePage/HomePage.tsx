@@ -67,16 +67,6 @@ const HomePage = () => {
                     finances, health and wellness, or personal growth and
                     spirituality, I am here to help.
                   </p>
-                  <p>
-                    My services include birth chart readings, synastry and
-                    composite chart analysis, and transit astrology. Currently,
-                    I only provide my services in English.
-                  </p>
-                  <p>
-                    Thank you for considering me for your astrological needs. I
-                    look forward to helping you gain clarity and insight into
-                    your life through the transformative power of astrology.
-                  </p>
                   <Link to="/about">
                     <button className="button button--bestia">
                       <div className="button__bg"></div>
