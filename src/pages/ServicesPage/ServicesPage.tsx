@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faStar } from "@fortawesome/free-solid-svg-icons";
 import FadeInSection from "@/components/FadeInSection/FadeInSection";
 import Footer from "@/components/Footer/Footer";
 
@@ -45,6 +45,10 @@ const ServicesPage = () => {
                 <p>
                   For any other questions or concerns, contact
                   brightshadowastrology@gmail.com.
+                </p>
+                <br></br>
+                <p>
+                  <FontAwesomeIcon icon={faStar} /> = For Return Clients only
                 </p>
               </div>
               <div className="services-container">
@@ -95,6 +99,52 @@ const ServicesPage = () => {
                   <div className="button-row">
                     <Link
                       to="https://calendly.com/brightshadowastrology/natal-chart-reading"
+                      target="_blank"
+                    >
+                      <button>
+                        <span>Book</span>{" "}
+                        <FontAwesomeIcon icon={faArrowRight} />
+                      </button>
+                    </Link>
+                  </div>
+                </details>
+                <details>
+                  <summary role="button" className="secondary">
+                    <FontAwesomeIcon icon={faStar} /> Natal Chart Reading -
+                    Return Client Referral Discount (1 Natal Chart Reading for
+                    $75)
+                  </summary>
+                  <p>
+                    NOTE: This natal chart reading service is priced a 25%
+                    discount, and only available to clients who are both
+                    returning, and have referred my services to someone else who
+                    has booked a session with me.
+                  </p>
+                  <div className="button-row">
+                    <Link
+                      to="https://calendly.com/brightshadowastrology/natal-chart-reading-return-client-referral-discount"
+                      target="_blank"
+                    >
+                      <button>
+                        <span>Book</span>{" "}
+                        <FontAwesomeIcon icon={faArrowRight} />
+                      </button>
+                    </Link>
+                  </div>
+                </details>
+                <details>
+                  <summary role="button" className="secondary">
+                    Natal Chart Reading - Referral Client Discount (1 Natal
+                    Chart Reading for $80)
+                  </summary>
+                  <p>
+                    NOTE: This natal chart reading service is priced a 20%
+                    discount, and only available to clients who have been
+                    referred to me by a previous client.
+                  </p>
+                  <div className="button-row">
+                    <Link
+                      to="https://calendly.com/brightshadowastrology/natal-chart-reading-referral-client-discount"
                       target="_blank"
                     >
                       <button>
