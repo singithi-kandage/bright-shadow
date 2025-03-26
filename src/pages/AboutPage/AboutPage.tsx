@@ -22,14 +22,12 @@ const AboutPage = () => {
                 <h2>About</h2>
 
                 <p>
-                  Hi, I’m Singithi! I am an astrologer with a passion for
-                  helping people gain insight into their lives through the art
-                  and intuitive science of astrology. I have been practicing
-                  Western archetypal astrology for ten years, and during this
-                  time, I have helped my clients find direction, purpose, and
-                  meaning in their lives. Most recently, I’ve been the manager
-                  of Montreal’s Astrology Meetup since 2023, a role that has
-                  been an immense pleasure to fulfill.
+                  Hi, I’m Singithi! I've been practicing Western archetypal
+                  astrology for ten years, and during this time, I have helped
+                  my clients find direction, purpose, and meaning in their
+                  lives. Most recently, I’ve been the manager of Montreal’s
+                  Astrology Meetup since 2023, a role that has been an immense
+                  pleasure to fulfill.
                 </p>
                 <p>
                   My work blends the psychological approach of archetypal

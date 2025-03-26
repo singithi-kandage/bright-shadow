@@ -52,9 +52,10 @@ const HomePage = () => {
                 </div>
                 <div className="text-container">
                   <h2>About</h2>
+                  <p>Hi, I'm Singithi!</p>
                   <p>
-                    I am a astrologer with a passion for helping people gain
-                    insight into their lives through the ancient science of
+                    I'm an astrologer with a passion for helping people gain
+                    insight into their lives through the symbolic language of
                     astrology. I have been practicing Western archetypal
                     astrology for several years, and during this time, I have
                     helped countless individuals find direction, purpose, and
