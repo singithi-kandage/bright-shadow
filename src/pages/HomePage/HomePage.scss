@@ -99,10 +99,13 @@
 
     .section-content {
       .title-container {
-        width: 30%;
+        width: 40%;
+        img {
+          width: 700px;
+        }
       }
       .text-container {
-        width: 70%;
+        width: 50%;
       }
     }
 
@@ -211,12 +214,12 @@
     .section-body {
       .section-content {
         .title-container {
-          width: 80%;
+          width: 30%;
         }
         .text-container {
           display: flex;
           flex-direction: column;
-          width: 80%;
+          width: 70%;
 
           a {
             align-self: center;

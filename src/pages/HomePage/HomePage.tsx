@@ -6,6 +6,7 @@ import FadeInSection from "@/components/FadeInSection/FadeInSection";
 import Footer from "@/components/Footer/Footer";
 
 import background_home2 from "@/assets/background_home2.svg";
+import headshot from "@/assets/headshot.jpg";
 import "./HomePage.scss";
 
 const HomePage = () => {
@@ -47,9 +48,10 @@ const HomePage = () => {
                 style={{ border: "none" }}
               >
                 <div className="title-container">
-                  <h2>About</h2>
+                  <img src={headshot}></img>
                 </div>
                 <div className="text-container">
+                  <h2>About</h2>
                   <p>
                     I am a astrologer with a passion for helping people gain
                     insight into their lives through the ancient science of
